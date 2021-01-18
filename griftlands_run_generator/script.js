@@ -10,6 +10,14 @@ function generateRun() {
         chosenPrestige = prestigeList[Math.floor(Math.random() * prestigeList.length)],
         chosenToDo = toDoList[Math.floor(Math.random() * toDoList.length)],
         chosenMutators = mutatorsList[Math.floor(Math.random() * mutatorsList.length)];
+    if (chosenRun.includes("Brawl") && chosenPrestige == "Story Mode") {
+        for (i = 0; i < 1; i++) {
+            chosenPrestige = prestigeList[Math.floor(Math.random() * prestigeList.length)];
+            if (chosenPrestige == "Story Mode") {
+                i--;
+            }
+        }
+    }
     document.getElementById("runType").value = chosenRun;
     document.getElementById("difficulty").value = chosenPrestige;
     document.getElementById("whatToDo").value = chosenToDo;
