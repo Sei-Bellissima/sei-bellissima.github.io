@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-</body>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <center>
+            <h1 id="topHeader">Griftlands Run Generator</h1>
+            <p>Don't know what to do for your next Griftlands run? This is the tool for you!</p>
+            <p>Just click the "Generate Run" button and a run will be automatically generated for you.</p>
+            <input id="generateButton" type="button" value="Generate Run" onclick="generateRun();" />
+        </center>
+        <div id="main">
+            <p>I'll play a <input type="text" id="runType" readonly> run,</p>
+            <p>on <input type="text" id="difficulty" readonly>.</p>
+            <p>For this run, I'll <input type="text" id="whatToDo" readonly>, even though it may be insane!</p>
+            <p>And for mutators, I'll <input type="text" id="mutators" readonly>.</p>
+            <p>Record your wins and try to keep up a win streak for as long as you can!</p>
+        </div>
+        <p id="footer">Coded by Sei Bellissima; thanks to AYellowShadeOfBlue for the idea</p>
+    </body>
+    <script src="script.js"></script> 
 </html>

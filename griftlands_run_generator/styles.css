@@ -1,0 +1,27 @@
+h1, p {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+#generateButton {
+    font-size: 20px;
+}
+#main {
+    margin: 0px 30px;
+}
+#main input {
+    display: inline-block;
+}
+#runType {
+    width: 72px;
+}
+#difficulty {
+    width:73px;
+}
+#whatToDo {
+    width: 343px;
+}
+#mutators {
+    width: 352px;
+}
+#footer {
+    font-size: 10px;
+}
